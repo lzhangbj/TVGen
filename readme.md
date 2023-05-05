@@ -22,3 +22,7 @@ It cost lots of GPU memory for generation.
 In case of cuda oom errors, 
 decrease width, height, video_length, num_videos_per_prompt.
 Too small resolution may lead to low image quality
+
+## Temporal attention layer
+Defined in `models/attention.py`
+Current `SparseCausalAttention` module attends to the first and previous frame only.
